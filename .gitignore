@@ -41,6 +41,7 @@ env/
 *.swo
 
 # Temporary & Logs
+.claude/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

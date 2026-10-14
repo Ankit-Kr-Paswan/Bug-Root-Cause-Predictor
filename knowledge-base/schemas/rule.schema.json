@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RootCauseRule",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "languages",
+    "patterns",
+    "candidateCauses",
+    "suggestedChecks",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["javascript", "python", "network", "database", "generic"]
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "pattern"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["exception_type", "message_regex", "stack_keyword"]
+          },
+          "pattern": {
+            "type": "string"
+          },
+          "flags": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "candidateCauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "explanation", "likelihoodWeight"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "explanation": { "type": "string" },
+          "likelihoodWeight": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "suggestedChecks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "instructions", "reason", "risk"],
+        "properties": {
+          "title": { "type": "string" },
+          "instructions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "reason": { "type": "string" },
+          "risk": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          }
+        }
+      }
+    },
+    "remedies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "description"],
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "codeExample": { "type": "string" }
+        }
+      }
+    },
+    "docLinks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}
