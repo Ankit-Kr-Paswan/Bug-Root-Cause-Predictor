@@ -110,6 +110,8 @@ export interface AnalysisResult {
 }
 
 export interface InferenceEngine {
+  readonly identifier: string;
+  readonly version: string;
   predict(request: AnalysisRequest, parsed: ParsedErrorInfo): Promise<PredictionOutput>;
 }
 

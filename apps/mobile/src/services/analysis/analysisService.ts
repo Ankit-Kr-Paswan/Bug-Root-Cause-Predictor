@@ -1,6 +1,7 @@
 import { AnalysisRequest, AnalysisResult, ProgrammingLanguage } from '../../domain/types';
 import { StackTraceParser } from '../parsing/stackTraceParser';
 import { RuleBasedDiagnosticEngine } from '../diagnostics/diagnosticEngine';
+import { activeInferenceEngine } from '../inference';
 import { SecretRedactor } from '../../utils/redaction';
 import { AnalysisRepository } from '../../database/AnalysisRepository';
 
@@ -9,7 +10,7 @@ export class AnalysisService {
 
   /**
    * Orchestrates the complete end-to-end analysis lifecycle:
-   * Validation -> Redaction -> Parsing -> Rule Diagnostics -> Persistence
+   * Validation -> Redaction -> Parsing -> ML Inference & Rule Diagnostics -> Persistence
    */
   public static async analyzeError(
     text: string,
@@ -43,7 +44,28 @@ export class AnalysisService {
     // 4. Run rule-based diagnostic engine
     const result = RuleBasedDiagnosticEngine.diagnose(request, parsed);
 
-    // 5. Persist to local SQLite storage
+    // 5. Augment with custom on-device ML model inference
+    try {
+      const mlPrediction = await activeInferenceEngine.predict(request, parsed);
+      result.modelVersion = `${activeInferenceEngine.identifier}@${activeInferenceEngine.version}`;
+      result.engineType = 'hybrid';
+
+      // If rules returned an unknown/ambiguous category, utilize ML's prediction
+      if (
+        result.category === 'Unknown / Ambiguous' ||
+        result.category === 'Uncategorized Error'
+      ) {
+        result.category = mlPrediction.category;
+        if (result.candidates.length === 0 || result.candidates[0].scoreLabel === 'Tentative') {
+          // Prepend top ML candidate
+          result.candidates = [...mlPrediction.candidates, ...result.candidates];
+        }
+      }
+    } catch (err) {
+      console.warn('ML inference evaluation fallback:', err);
+    }
+
+    // 6. Persist to local SQLite storage
     if (saveToHistory) {
       try {
         await AnalysisRepository.getInstance().save(result);
