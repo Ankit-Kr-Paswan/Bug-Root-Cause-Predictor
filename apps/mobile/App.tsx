@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider, useTheme } from './src/app/providers/ThemeProvider';
 import { RootNavigator } from './src/app/navigation/RootNavigator';
+import { ErrorBoundary } from './src/components/common/ErrorBoundary';
 
 function MainApp() {
   const { isDark } = useTheme();
@@ -20,8 +21,10 @@ function MainApp() {
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <MainApp />
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <MainApp />
+      </ThemeProvider>
+    </ErrorBoundary>
   );
 }
