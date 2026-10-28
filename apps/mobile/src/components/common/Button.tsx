@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   ViewStyle,
   TextStyle,
+  Platform,
 } from 'react-native';
 import { useTheme } from '../../app/providers/ThemeProvider';
 import { BorderRadius, Spacing } from '../../theme';
@@ -102,10 +103,18 @@ export const Button: React.FC<ButtonProps> = ({
     }
   };
 
+  const handlePress = () => {
+    if (Platform.OS === 'web' && typeof document !== 'undefined') {
+      const activeEl = document.activeElement as HTMLElement | null;
+      activeEl?.blur?.();
+    }
+    onPress();
+  };
+
   return (
     <TouchableOpacity
       activeOpacity={0.75}
-      onPress={onPress}
+      onPress={handlePress}
       disabled={disabled || loading}
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel || title}

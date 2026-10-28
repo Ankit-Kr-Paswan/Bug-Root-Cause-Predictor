@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, ViewStyle, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, ViewStyle, TouchableOpacity, Platform } from 'react-native';
 import { useTheme } from '../../app/providers/ThemeProvider';
 import { BorderRadius, Spacing } from '../../theme';
 
@@ -43,11 +43,19 @@ export const Card: React.FC<CardProps> = ({
         }),
   };
 
+  const handlePress = () => {
+    if (Platform.OS === 'web' && typeof document !== 'undefined') {
+      const activeEl = document.activeElement as HTMLElement | null;
+      activeEl?.blur?.();
+    }
+    onPress?.();
+  };
+
   if (onPress) {
     return (
       <TouchableOpacity
         activeOpacity={0.7}
-        onPress={onPress}
+        onPress={handlePress}
         style={[containerStyle, style]}
       >
         {children}
