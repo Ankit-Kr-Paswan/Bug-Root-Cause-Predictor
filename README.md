@@ -1,7 +1,7 @@
 # Bug Root Cause Predictor 🐞🔍
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![React Native](https://img.shields.io/badge/React_Native-Expo_SDK_57-61DAFB?logo=react)](https://reactnative.dev/)
+[![React Native](https://img.shields.io/badge/React_Native-Expo_SDK_58-61DAFB?logo=react)](https://reactnative.dev/)
 [![SQLite](https://img.shields.io/badge/SQLite-Local_Persistence-003B57?logo=sqlite)](https://www.sqlite.org/)
 [![Offline First](https://img.shields.io/badge/Offline-100%25_On--Device-success)](docs/privacy.md)
 [![ML Model](https://img.shields.io/badge/ML-On--Device_TF--IDF_+_Naive_Bayes-orange)](ml/)
