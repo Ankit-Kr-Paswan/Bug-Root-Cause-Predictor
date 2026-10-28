@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ERR_001",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: Cannot read properties of undefined (reading 'map')\n    at UserList (/app/src/components/UserList.js:24:18)\n    at renderWithHooks (/app/node_modules/react-dom/cjs/react-dom.development.js:14985:18)\n    at updateFunctionComponent (/app/node_modules/react-dom/cjs/react-dom.development.js:17356:20)",
+    "cleaned_text": "typeerror: cannot read properties of undefined (reading 'map')\n    at userlist (<PATH>:<LOC>)\n    at renderwithhooks (<PATH>:<LOC>)\n    at updatefunctioncomponent (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_002",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: null is not an object (evaluating 'user.profile.avatar')\n    at renderHeader (src/screens/ProfileScreen.tsx:45:22)\n    at RCTView\n    at View",
+    "cleaned_text": "typeerror: null is not an object (evaluating 'user.profile.avatar')\n    at renderheader (src<PATH>:<LOC>)\n    at rctview\n    at view"
+  },
+  {
+    "id": "ERR_003",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: response.data.forEach is not a function\n    at loadProducts (/frontend/src/api/catalog.ts:58:21)\n    at async fetchInitialState (/frontend/src/store/index.ts:112:5)",
+    "cleaned_text": "typeerror: response.data.foreach is not a function\n    at loadproducts (<PATH>:<LOC>)\n    at async fetchinitialstate (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_004",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: Cannot set properties of undefined (setting 'status')\n    at handleResponse (/server/src/controllers/orderController.js:89:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "cleaned_text": "typeerror: cannot set properties of undefined (setting 'status')\n    at handleresponse (<PATH>:<LOC>)\n    at processticksandrejections (node:internal<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_005",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: Cannot destructure property 'token' of 'req.body' as it is undefined.\n    at authMiddleware (/api/src/middleware/authenticate.js:14:11)\n    at Layer.handle [as handle_request] (/api/node_modules/express/lib/router/layer.js:95:5)",
+    "cleaned_text": "typeerror: cannot destructure property 'token' of 'req.body' as it is undefined.\n    at authmiddleware (<PATH>:<LOC>)\n    at layer.handle [as handle_request] (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_006",
+    "category": "Runtime / Type Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"/srv/app/services/parser.py\", line 42, in process_payload\n    total_items = len(payload['items'])\nTypeError: 'NoneType' object is not subscriptable",
+    "cleaned_text": "traceback (most recent call last):\n  file \"<PATH>\", line <NUM>, in process_payload\n    total_items = len(payload['items'])\ntypeerror: 'nonetype' object is not subscriptable"
+  },
+  {
+    "id": "ERR_007",
+    "category": "Runtime / Type Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"manage.py\", line 18, in calculate_discount\n    return price + discount_code\nTypeError: can only concatenate str (not \"int\") to str",
+    "cleaned_text": "traceback (most recent call last):\n  file \"manage.py\", line <NUM>, in calculate_discount\n    return price + discount_code\ntypeerror: can only concatenate str (not \"int\") to str"
+  },
+  {
+    "id": "ERR_008",
+    "category": "Runtime / Type Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"app/ml/evaluate.py\", line 99, in compute_metrics\n    accuracy = correct_count / total\nTypeError: unsupported operand type(s) for /: 'NoneType' and 'int'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"app<PATH>\", line <NUM>, in compute_metrics\n    accuracy = correct_count / total\ntypeerror: unsupported operand type(s) for /: 'nonetype' and 'int'"
+  },
+  {
+    "id": "ERR_009",
+    "category": "Runtime / Type Error",
+    "language": "javascript",
+    "raw_text": "TypeError: value.trim is not a function\n    at validateInput (src/utils/validators.js:12:16)\n    at Object.onSubmit (src/components/Form.js:48:9)",
+    "cleaned_text": "typeerror: value.trim is not a function\n    at validateinput (src<PATH>:<LOC>)\n    at object.onsubmit (src<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_010",
+    "category": "Scope / Reference Error",
+    "language": "javascript",
+    "raw_text": "ReferenceError: document is not defined\n    at Object.render (/app/.next/server/pages/index.js:45:12)\n    at ReactDOMServerRenderer.render (/app/node_modules/react-dom/cjs/react-dom-server.node.development.js:4053:55)",
+    "cleaned_text": "referenceerror: document is not defined\n    at object.render (<PATH>:<LOC>)\n    at reactdomserverrenderer.render (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_011",
+    "category": "Scope / Reference Error",
+    "language": "javascript",
+    "raw_text": "ReferenceError: window is not defined\n    at setupAnalytics (/workspace/packages/client/src/analytics.ts:18:7)\n    at Module.eval (/workspace/packages/client/src/index.ts:3:1)",
+    "cleaned_text": "referenceerror: window is not defined\n    at setupanalytics (<PATH>:<LOC>)\n    at module.eval (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_012",
+    "category": "Scope / Reference Error",
+    "language": "javascript",
+    "raw_text": "ReferenceError: Cannot access 'appConfig' before initialization\n    at initializeApp (/server/dist/config/index.js:33:14)\n    at Object.<anonymous> (/server/dist/index.js:8:1)",
+    "cleaned_text": "referenceerror: cannot access 'appconfig' before initialization\n    at initializeapp (<PATH>:<LOC>)\n    at object.<anonymous> (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_013",
+    "category": "Scope / Reference Error",
+    "language": "javascript",
+    "raw_text": "ReferenceError: process is not defined\n    at getEnvVar (webpack://src/utils/env.ts:8:10)\n    at eval (webpack://src/index.ts:12:1)",
+    "cleaned_text": "referenceerror: process is not defined\n    at getenvvar (webpack:/<PATH>:<LOC>)\n    at eval (webpack:/<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_014",
+    "category": "Scope / Reference Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"server.py\", line 67, in handle_request\n    log_audit_trail(current_user)\nNameError: name 'current_user' is not defined",
+    "cleaned_text": "traceback (most recent call last):\n  file \"server.py\", line <NUM>, in handle_request\n    log_audit_trail(current_user)\nnameerror: name 'current_user' is not defined"
+  },
+  {
+    "id": "ERR_015",
+    "category": "Scope / Reference Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"ml/dataset.py\", line 15, in load_data\n    df = pd.read_csv(filepath)\nNameError: name 'pd' is not defined. Did you forget to import pandas as pd?",
+    "cleaned_text": "traceback (most recent call last):\n  file \"ml<PATH>\", line <NUM>, in load_data\n    df = pd.read_csv(filepath)\nnameerror: name 'pd' is not defined. did you forget to import pandas as pd?"
+  },
+  {
+    "id": "ERR_016",
+    "category": "Scope / Reference Error",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"workers/sync.py\", line 84, in increment_count\n    count += 1\nUnboundLocalError: local variable 'count' referenced before assignment",
+    "cleaned_text": "traceback (most recent call last):\n  file \"workers<PATH>\", line <NUM>, in increment_count\n    count += 1\nunboundlocalerror: local variable 'count' referenced before assignment"
+  },
+  {
+    "id": "ERR_017",
+    "category": "Data Structure / KeyError",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"app/auth.py\", line 52, in extract_claims\n    user_id = token_payload['sub_id']\nKeyError: 'sub_id'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"app<PATH>\", line <NUM>, in extract_claims\n    user_id = token_payload['sub_id']\nkeyerror: 'sub_id'"
+  },
+  {
+    "id": "ERR_018",
+    "category": "Data Structure / KeyError",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"etl/transform.py\", line 105, in parse_row\n    timestamp = record['metadata']['created_at']\nKeyError: 'created_at'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"etl<PATH>\", line <NUM>, in parse_row\n    timestamp = record['metadata']['created_at']\nkeyerror: 'created_at'"
+  },
+  {
+    "id": "ERR_019",
+    "category": "Data Structure / KeyError",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"pipeline/process.py\", line 31, in get_first_element\n    primary_item = items[0]\nIndexError: list index out of range",
+    "cleaned_text": "traceback (most recent call last):\n  file \"pipeline<PATH>\", line <NUM>, in get_first_element\n    primary_item = items[0]\nindexerror: list index out of range"
+  },
+  {
+    "id": "ERR_020",
+    "category": "Data Structure / KeyError",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"scripts/import_users.py\", line 44, in parse_csv\n    name, email, age = row.split(',')\nValueError: not enough values to unpack (expected 3, got 2)",
+    "cleaned_text": "traceback (most recent call last):\n  file \"scripts<PATH>\", line <NUM>, in parse_csv\n    name, email, age = row.split(',')\nvalueerror: not enough values to unpack (expected 3, got 2)"
+  },
+  {
+    "id": "ERR_021",
+    "category": "Data Structure / KeyError",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"main.py\", line 29, in convert_id\n    parsed_id = int(user_input)\nValueError: invalid literal for int() with base 10: 'undefined'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"main.py\", line <NUM>, in convert_id\n    parsed_id = int(user_input)\nvalueerror: invalid literal for int() with base 10: 'undefined'"
+  },
+  {
+    "id": "ERR_022",
+    "category": "Dependency / Environment",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"train.py\", line 4, in <module>\n    import scikit_learn\nModuleNotFoundError: No module named 'scikit_learn'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"train.py\", line <NUM>, in <module>\n    import scikit_learn\nmodulenotfounderror: no module named 'scikit_learn'"
+  },
+  {
+    "id": "ERR_023",
+    "category": "Dependency / Environment",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"run_server.py\", line 2, in <module>\n    import uvicorn\nModuleNotFoundError: No module named 'uvicorn'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"run_server.py\", line <NUM>, in <module>\n    import uvicorn\nmodulenotfounderror: no module named 'uvicorn'"
+  },
+  {
+    "id": "ERR_024",
+    "category": "Dependency / Environment",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"services/crypto.py\", line 5, in <module>\n    from cryptography.hazmat.primitives.ciphers import algorithms\nImportError: cannot import name 'algorithms' from 'cryptography.hazmat.primitives.ciphers'",
+    "cleaned_text": "traceback (most recent call last):\n  file \"services<PATH>\", line <NUM>, in <module>\n    from cryptography.hazmat.primitives.ciphers import algorithms\nimporterror: cannot import name 'algorithms' from 'cryptography.hazmat.primitives.ciphers'"
+  },
+  {
+    "id": "ERR_025",
+    "category": "Dependency / Environment",
+    "language": "javascript",
+    "raw_text": "Error: Cannot find module '@react-navigation/native'\nRequire stack:\n- /workspace/apps/mobile/src/App.tsx\n- /workspace/apps/mobile/index.js",
+    "cleaned_text": "error: cannot find module '@react-navigation<PATH>'\nrequire stack:\n- <PATH>\n- <PATH>"
+  },
+  {
+    "id": "ERR_026",
+    "category": "Dependency / Environment",
+    "language": "javascript",
+    "raw_text": "Error: Cannot find module 'expo-sqlite'\n    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Function.Module._load (node:internal/modules/cjs/loader:985:27)",
+    "cleaned_text": "error: cannot find module 'expo-sqlite'\n    at function.module._resolvefilename (node:internal<PATH>:<LOC>)\n    at function.module._load (node:internal<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_027",
+    "category": "Dependency / Environment",
+    "language": "generic",
+    "raw_text": "npm ERR! code ERESOLVE\nnpm ERR! ERESOLVE unable to resolve dependency tree\nnpm ERR! Found: react@18.2.0\nnpm ERR! peer react@\"^19.0.0\" from some-library@2.1.0",
+    "cleaned_text": "npm err! code eresolve\nnpm err! eresolve unable to resolve dependency tree\nnpm err! found: react@18.2.0\nnpm err! peer react@\"^19.0.0\" from some-library@2.1.0"
+  },
+  {
+    "id": "ERR_028",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)\n    at Connection.connect (/app/node_modules/pg/lib/connection.js:63:17)",
+    "cleaned_text": "error: connect econnrefused 127.0.0.1:5432\n    at tcpconnectwrap.afterconnect [as oncomplete] (node:net:<LOC>)\n    at connection.connect (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_029",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "FetchError: request to https://api.stripe.com/v1/customers failed, reason: connect ETIMEDOUT 54.187.205.235:443\n    at ClientRequest.<anonymous> (/app/node_modules/node-fetch/lib/index.js:1491:11)\n    at Socket.emit (node:events:517:28)",
+    "cleaned_text": "fetcherror: request to https:/<PATH> failed, reason: connect etimedout 54.187.205.235:443\n    at clientrequest.<anonymous> (<PATH>:<LOC>)\n    at socket.emit (node:events:<LOC>)"
+  },
+  {
+    "id": "ERR_030",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "AxiosError: timeout of 5000ms exceeded\n    at createError (/app/node_modules/axios/lib/core/createError.js:16:15)\n    at Timeout.handleRequestTimeout (/app/node_modules/axios/lib/adapters/http.js:312:16)",
+    "cleaned_text": "axioserror: timeout of 5000ms exceeded\n    at createerror (<PATH>:<LOC>)\n    at timeout.handlerequesttimeout (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_031",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "Error: getaddrinfo ENOTFOUND api.internal-cluster.local\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)\n    at executeRequest (/service/src/http.ts:42:19)",
+    "cleaned_text": "error: getaddrinfo enotfound api.internal-cluster.local\n    at getaddrinforeqwrap.onlookup [as oncomplete] (node:dns:<LOC>)\n    at executerequest (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_032",
+    "category": "Network / Infrastructure",
+    "language": "python",
+    "raw_text": "requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x103b4>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "cleaned_text": "requests.exceptions.connectionerror: httpsconnectionpool(host='api.openai.com', port=443): max retries exceeded with url: <PATH> (caused by newconnectionerror('<urllib3.connection.httpsconnection object at <ADDR>>: failed to establish a new connection: [errno 61] connection refused'))"
+  },
+  {
+    "id": "ERR_033",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "Error: socket hang up\n    at connResetException (node:internal/errors:705:14)\n    at Socket.socketOnEnd (node:_http_client:518:23)\n    at Socket.emit (node:events:529:35)",
+    "cleaned_text": "error: socket hang up\n    at connresetexception (node:internal<PATH>:<LOC>)\n    at socket.socketonend (node:_http_client:<LOC>)\n    at socket.emit (node:events:<LOC>)"
+  },
+  {
+    "id": "ERR_034",
+    "category": "Network / Infrastructure",
+    "language": "network",
+    "raw_text": "net::ERR_CONNECTION_RESET\n    at fetchResources (webpack://src/services/api.ts:88:14)\n    at async loadDashboard (webpack://src/views/Dashboard.vue:24:9)",
+    "cleaned_text": "net::err_connection_reset\n    at fetchresources (webpack:/<PATH>:<LOC>)\n    at async loaddashboard (webpack:/<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_035",
+    "category": "Authentication / Security",
+    "language": "network",
+    "raw_text": "HTTP 401 Unauthorized: Invalid or expired access token\n    at verifyToken (/app/src/middleware/jwt.js:31:14)\n    at authenticate (/app/src/routes/api.js:18:5)",
+    "cleaned_text": "http 401 unauthorized: invalid or expired access token\n    at verifytoken (<PATH>:<LOC>)\n    at authenticate (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_036",
+    "category": "Authentication / Security",
+    "language": "javascript",
+    "raw_text": "JsonWebTokenError: jwt expired\n    at /app/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/app/src/auth/tokenService.ts:44:9)",
+    "cleaned_text": "jsonwebtokenerror: jwt expired\n    at <PATH>:<LOC>\n    at getsecret (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_037",
+    "category": "Authentication / Security",
+    "language": "javascript",
+    "raw_text": "JsonWebTokenError: invalid signature\n    at module.exports [as verify] (/api/node_modules/jsonwebtoken/verify.js:133:19)\n    at authenticateUser (/api/src/auth.js:22:15)",
+    "cleaned_text": "jsonwebtokenerror: invalid signature\n    at module.exports [as verify] (<PATH>:<LOC>)\n    at authenticateuser (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_038",
+    "category": "Authentication / Security",
+    "language": "network",
+    "raw_text": "HTTP 403 Forbidden: Caller does not have permission 'storage.buckets.get' for resource 'prod-backups'\n    at GoogleError (/app/node_modules/@google-cloud/storage/build/src/storage.js:142:11)",
+    "cleaned_text": "http 403 forbidden: caller does not have permission 'storage.buckets.get' for resource 'prod-backups'\n    at googleerror (<PATH>@google-cloud<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_039",
+    "category": "Authentication / Security",
+    "language": "generic",
+    "raw_text": "git@github.com: Permission denied (publickey).\nfatal: Could not read from remote repository.\nPlease make sure you have the correct access rights and the repository exists.",
+    "cleaned_text": "git@github.com: permission denied (publickey).\nfatal: could not read from remote repository.\nplease make sure you have the correct access rights and the repository exists."
+  },
+  {
+    "id": "ERR_040",
+    "category": "Authentication / Security",
+    "language": "python",
+    "raw_text": "google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or configure Application Default Credentials.",
+    "cleaned_text": "google.auth.exceptions.defaultcredentialserror: could not automatically determine credentials. please set google_application_credentials or configure application default credentials."
+  },
+  {
+    "id": "ERR_041",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "QueryFailedError: relation \"users\" does not exist\n    at PostgresQueryRunner.query (/app/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:211:19)\n    at async UserRepository.find (/app/src/repositories/User.ts:45:12)",
+    "cleaned_text": "queryfailederror: relation \"users\" does not exist\n    at postgresqueryrunner.query (<PATH>:<LOC>)\n    at async userrepository.find (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_042",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "SequelizeDatabaseError: column \"created_at\" of relation \"orders\" does not exist\n    at Query.formatError (/app/node_modules/sequelize/lib/dialects/postgres/query.js:354:16)\n    at Query.run (/app/node_modules/sequelize/lib/dialects/postgres/query.js:71:18)",
+    "cleaned_text": "sequelizedatabaseerror: column \"created_at\" of relation \"orders\" does not exist\n    at query.formaterror (<PATH>:<LOC>)\n    at query.run (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_043",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "sqlite3.OperationalError: no such table: user_sessions\n  File \"db/session.py\", line 34, in get_session\n    cursor.execute(\"SELECT * FROM user_sessions WHERE token = ?\", (token,))",
+    "cleaned_text": "sqlite3.operationalerror: no such table: user_sessions\n  file \"db<PATH>\", line <NUM>, in get_session\n    cursor.execute(\"select * from user_sessions where token = ?\", (token,))"
+  },
+  {
+    "id": "ERR_044",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "KnexTimeoutError: Knex: Timeout acquiring a connection. The pool is probably full. Are you missing a .transacting(trx) or forgetting to close connections?\n    at Client_PG.acquireConnection (/app/node_modules/knex/lib/client.js:312:26)",
+    "cleaned_text": "knextimeouterror: knex: timeout acquiring a connection. the pool is probably full. are you missing a .transacting(trx) or forgetting to close connections?\n    at client_pg.acquireconnection (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_045",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint \"users_email_key\"\nDETAIL:  Key (email)=(aditya@example.com) already exists.\n  File \"repositories/user.py\", line 82, in create_user",
+    "cleaned_text": "psycopg2.errors.uniqueviolation: duplicate key value violates unique constraint \"users_email_key\"\ndetail:  key (email)=(aditya@example.com) already exists.\n  file \"repositories<PATH>\", line <NUM>, in create_user"
+  },
+  {
+    "id": "ERR_046",
+    "category": "Database / Persistence",
+    "language": "database",
+    "raw_text": "PrismaClientKnownRequestError: Unique constraint failed on the constraint: `User_email_key`\n    at RequestHandler.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:122:15)",
+    "cleaned_text": "prismaclientknownrequesterror: unique constraint failed on the constraint: `user_email_key`\n    at requesthandler.handlerequesterror (<PATH>@prisma<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_047",
+    "category": "Resource / Memory",
+    "language": "javascript",
+    "raw_text": "<--- Last few GCs --->\nFATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory\n 1: 0x1042b892a node::Abort() [/usr/local/bin/node]\n 2: 0x1034f19b2 v8::internal::V8::FatalProcessOutOfMemory [/usr/local/bin/node]",
+    "cleaned_text": "<--- last few gcs --->\nfatal error: ineffective mark-compacts near heap limit allocation failed - javascript heap out of memory\n 1: <ADDR> node::abort() [<PATH>]\n 2: <ADDR> v8::internal::v8::fatalprocessoutofmemory [<PATH>]"
+  },
+  {
+    "id": "ERR_048",
+    "category": "Resource / Memory",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"matrix_ops.py\", line 18, in allocate_big_matrix\n    arr = np.zeros((100000, 100000), dtype=np.float64)\nMemoryError: Unable to allocate 74.5 GiB for an array with shape (100000, 100000) and data type float64",
+    "cleaned_text": "traceback (most recent call last):\n  file \"matrix_ops.py\", line <NUM>, in allocate_big_matrix\n    arr = np.zeros((100000, 100000), dtype=np.float64)\nmemoryerror: unable to allocate 74.5 gib for an array with shape (100000, 100000) and data type float64"
+  },
+  {
+    "id": "ERR_049",
+    "category": "Resource / Memory",
+    "language": "javascript",
+    "raw_text": "RangeError: Maximum call stack size exceeded\n    at deepClone (/app/src/utils/clone.js:8:19)\n    at deepClone (/app/src/utils/clone.js:14:23)\n    at deepClone (/app/src/utils/clone.js:14:23)\n    at deepClone (/app/src/utils/clone.js:14:23)",
+    "cleaned_text": "rangeerror: maximum call stack size exceeded\n    at deepclone (<PATH>:<LOC>)\n    at deepclone (<PATH>:<LOC>)\n    at deepclone (<PATH>:<LOC>)\n    at deepclone (<PATH>:<LOC>)"
+  },
+  {
+    "id": "ERR_050",
+    "category": "Resource / Memory",
+    "language": "python",
+    "raw_text": "Traceback (most recent call last):\n  File \"tree.py\", line 45, in traverse\n    return traverse(node.left)\nRecursionError: maximum recursion depth exceeded while calling a Python object",
+    "cleaned_text": "traceback (most recent call last):\n  file \"tree.py\", line <NUM>, in traverse\n    return traverse(node.left)\nrecursionerror: maximum recursion depth exceeded while calling a python object"
+  }
+]
