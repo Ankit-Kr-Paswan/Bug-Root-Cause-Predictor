@@ -184,7 +184,7 @@ export const HomeScreen: React.FC = () => {
                 },
               ]}
             >
-              <Text style={[styles.sampleText, { color: colors.primaryLight }]}>
+              <Text style={[styles.sampleText, { color: colors.primary }]}>
                 {s.label}
               </Text>
             </TouchableOpacity>

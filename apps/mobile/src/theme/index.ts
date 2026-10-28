@@ -99,15 +99,15 @@ export const LightThemeColors: ThemeColors = {
   surface: '#FFFFFF',
   surfaceVariant: '#F1F5F9',
   surfaceBorder: '#E2E8F0',
-  surfaceBorderFocused: '#3B82F6',
+  surfaceBorderFocused: '#3867F6',
 
-  primary: '#2563EB',
-  primaryLight: '#3B82F6',
-  primaryDark: '#1E40AF',
+  primary: '#3867F6',
+  primaryLight: '#2563EB',
+  primaryDark: '#1D4ED8',
   primaryForeground: '#FFFFFF',
 
-  secondary: '#059669',
-  secondaryLight: '#10B981',
+  secondary: '#10B981',
+  secondaryLight: '#059669',
   secondaryForeground: '#FFFFFF',
 
   text: '#0F172A',
@@ -130,7 +130,7 @@ export const LightThemeColors: ThemeColors = {
   infoBg: '#F0F9FF',
   infoBorder: '#BAE6FD',
 
-  codeBackground: '#1E293B',
+  codeBackground: '#0F172A',
   codeText: '#F8FAFC',
   codeKeyword: '#93C5FD',
   codeLineNumber: '#64748B',

@@ -30,11 +30,17 @@ export const Card: React.FC<CardProps> = ({
       ? {
           shadowColor: '#000',
           shadowOffset: { width: 0, height: 4 },
-          shadowOpacity: 0.15,
+          shadowOpacity: 0.12,
           shadowRadius: 8,
           elevation: 3,
         }
-      : {}),
+      : {
+          shadowColor: '#64748B',
+          shadowOffset: { width: 0, height: 1 },
+          shadowOpacity: 0.05,
+          shadowRadius: 3,
+          elevation: 1,
+        }),
   };
 
   if (onPress) {

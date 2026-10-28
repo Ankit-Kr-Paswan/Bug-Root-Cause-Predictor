@@ -29,7 +29,7 @@ const MainTabs: React.FC = () => {
           paddingBottom: 8,
           paddingTop: 6,
         },
-        tabBarActiveTintColor: colors.primaryLight,
+        tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textMuted,
       }}
     >
